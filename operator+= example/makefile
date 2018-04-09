@@ -12,3 +12,6 @@ output = spacegeek
 
 all:
 	$(cc) $(name) -o $(output) $(cflags)
+
+run:
+	$(output)
