@@ -1,0 +1,15 @@
+######## Atom general settings  #########
+
+// plugins a installer
+Emmet -- plugin programmation web
+file icons -- plugin pour afficher les icones des fichiers dans Atom
+Atom live server -- plugin pour le developpement web qui permet d'etre connecté au serveur web de developpement
+todo -- plugin qui permet de rajouter des todo dans les programmes pour rappel
+minimap -- plugin pour voir un visuel du programme sous forme de map a droite  comme sublime text
+pigments -- plugin pour voir le rendu des couleurs utilisé surtout en dev web
+ask a stack by chris911-- plugin permettant de chercher sur stack overflow des questions sur la programmation en generale (anglais)
+gcc-make run -- plugin qui permet l'execution de fichier makefile dans Atom
+
+//TODO: install g++ sous windows avec le lien vers mingw
+
+//TODO: ajouter les infos pour l'install github install obligatoire pour utiliser avec atom et mettre a jour son github
