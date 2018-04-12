@@ -1,17 +1,21 @@
-#compiler
-cc = g++
+CC = g++
+CFLAGS = -W -Wall -g
+LDFLAGS =
 
-#namefile
-name = geek.cpp nerd.cpp main.cpp
+SRC = $(wildcard *.cpp)
+OBJS = $(SRC:.c=.o)
+AOUT = prog
 
-#cflags
-cflags =
+all : $(AOUT)
 
-#output
-output = spacegeek
+prog : $(OBJS)
+	$(CC) $(LDFLAGS) -o $@ $^
+%.o : %.c
+	$(CC) $(CFLAGS) -o $@ -c $<
+clean :
+	@rm *.o
+cleaner : clean
+	@rm $(AOUT)
 
-all:
-	$(cc) $(name) -o $(output) $(cflags)
-
-run:
-	$(output)
+run :
+	$(AOUT)
